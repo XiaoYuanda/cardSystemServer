@@ -19,6 +19,7 @@ public class Card {
     private String question;
     @Column(columnDefinition="text")
     private String answer;
+    @JsonFormat(shape= JsonFormat.Shape.STRING,pattern="yyyy-MM-dd HH:mm:ss",timezone="GMT+8")
     private Date nextreviewtime;
     private Integer level;
 }
